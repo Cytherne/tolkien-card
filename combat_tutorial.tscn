@@ -276,19 +276,48 @@ offset_right = 205.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="CardPreview" type="Control" parent="." unique_id=565851672]
-custom_minimum_size = Vector2(180, 240)
+[node name="EndTurnButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -170.0
+offset_right = -20.0
+offset_bottom = -120.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "⚔ Fin de tour"
+
+[node name="TutorialBubble" type="PanelContainer" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -93.0
-offset_top = -112.0
-offset_right = 87.0
-offset_bottom = 128.0
+offset_left = -280.0
+offset_top = -100.0
+offset_right = 280.0
+offset_bottom = 100.0
 grow_horizontal = 2
 grow_vertical = 2
+visible = false
+
+[node name="MarginContainer" type="MarginContainer" parent="TutorialBubble"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="TutorialText" type="Label" parent="TutorialBubble/MarginContainer"]
+layout_mode = 2
+autowrap_mode = 3
+horizontal_alignment = 1
+vertical_alignment = 1
+text = ""
 
 [connection signal="pressed" from="BackButton" to="." method="_on_button_pressed"]
