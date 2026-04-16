@@ -1,0 +1,294 @@
+[gd_scene format=3 uid="uid://5f0ub6pq3olg"]
+
+[ext_resource type="Script" uid="uid://cymlbjc8gn1v6" path="res://combat_tutorial.gd" id="1_7s3m2"]
+[ext_resource type="Texture2D" uid="uid://dtu25o1rnhniy" path="res://VeniceAI_Hs9Zi6o.png" id="2_n40cl"]
+[ext_resource type="Texture2D" uid="uid://pfluopgu078e" path="res://cytherne3148_Tulkas_fights_Melkor._Gods._Mighty._Light_vs_Darkn_5e68ac29-28c7-4377-8b8d-4111e8731702.png" id="2_uxsug"]
+[ext_resource type="Texture2D" uid="uid://cy35b73ma6do2" path="res://fond allié.jpg" id="3_akak6"]
+[ext_resource type="Texture2D" uid="uid://4ddf0vn8q27b" path="res://fond ennemi.jpg" id="4_uxsug"]
+
+[node name="CombatTutorial" type="Control" unique_id=1301475511]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7s3m2")
+
+[node name="BackTexture" type="TextureRect" parent="." unique_id=1152641682]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_uxsug")
+expand_mode = 1
+
+[node name="BackButton" type="Button" parent="." unique_id=1025768889]
+layout_mode = 1
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 86.0
+offset_bottom = 88.0
+icon = ExtResource("2_n40cl")
+expand_icon = true
+
+[node name="TitleLabel" type="Label" parent="." unique_id=274239369]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -74.5
+offset_top = 20.0
+offset_right = 74.5
+offset_bottom = 43.0
+grow_horizontal = 2
+text = "Tutoriel de Combat"
+vertical_alignment = 1
+
+[node name="Board" type="Control" parent="." unique_id=1726280951]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CaseA1" type="TextureRect" parent="Board" unique_id=1116328205]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -351.0
+offset_top = -86.0
+offset_right = -235.0
+offset_bottom = -40.0
+grow_horizontal = 2
+texture = ExtResource("3_akak6")
+expand_mode = 1
+
+[node name="CaseA2" type="TextureRect" parent="Board" unique_id=683810268]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -156.0
+offset_top = -76.0
+offset_right = -40.0
+offset_bottom = -30.0
+grow_horizontal = 2
+texture = ExtResource("3_akak6")
+expand_mode = 1
+
+[node name="CaseA3" type="TextureRect" parent="Board" unique_id=1043496568]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -435.0
+offset_right = -319.0
+offset_bottom = 46.0
+grow_horizontal = 2
+texture = ExtResource("3_akak6")
+expand_mode = 1
+
+[node name="CaseA4" type="TextureRect" parent="Board" unique_id=1169739379]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -219.0
+offset_top = 8.0
+offset_right = -103.0
+offset_bottom = 54.0
+grow_horizontal = 2
+texture = ExtResource("3_akak6")
+expand_mode = 1
+
+[node name="CaseA5" type="TextureRect" parent="Board" unique_id=2106158340]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -520.0
+offset_top = 91.0
+offset_right = -404.0
+offset_bottom = 137.0
+grow_horizontal = 2
+texture = ExtResource("3_akak6")
+expand_mode = 1
+
+[node name="CaseA6" type="TextureRect" parent="Board" unique_id=190580515]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -286.0
+offset_top = 88.0
+offset_right = -170.0
+offset_bottom = 134.0
+grow_horizontal = 2
+texture = ExtResource("3_akak6")
+expand_mode = 1
+
+[node name="CaseE1" type="TextureRect" parent="Board" unique_id=82224722]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 38.0
+offset_top = -80.0
+offset_right = 163.0
+offset_bottom = -29.0
+grow_horizontal = 2
+texture = ExtResource("4_uxsug")
+expand_mode = 1
+
+[node name="CaseE2" type="TextureRect" parent="Board" unique_id=2101356486]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 235.0
+offset_top = -85.0
+offset_right = 360.0
+offset_bottom = -34.0
+grow_horizontal = 2
+texture = ExtResource("4_uxsug")
+expand_mode = 1
+
+[node name="CaseE3" type="TextureRect" parent="Board" unique_id=1672419280]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 95.0
+offset_top = 5.0
+offset_right = 220.0
+offset_bottom = 56.0
+grow_horizontal = 2
+texture = ExtResource("4_uxsug")
+expand_mode = 1
+
+[node name="CaseE4" type="TextureRect" parent="Board" unique_id=422968077]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 319.0
+offset_top = 8.0
+offset_right = 444.0
+offset_bottom = 59.0
+grow_horizontal = 2
+texture = ExtResource("4_uxsug")
+expand_mode = 1
+
+[node name="CaseE5" type="TextureRect" parent="Board" unique_id=2117574428]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 153.0
+offset_top = 93.0
+offset_right = 278.0
+offset_bottom = 144.0
+grow_horizontal = 2
+texture = ExtResource("4_uxsug")
+expand_mode = 1
+
+[node name="CaseE6" type="TextureRect" parent="Board" unique_id=2069437262]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 405.0
+offset_top = 93.0
+offset_right = 530.0
+offset_bottom = 144.0
+grow_horizontal = 2
+texture = ExtResource("4_uxsug")
+expand_mode = 1
+
+[node name="Deck" type="TextureRect" parent="." unique_id=318640074]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 0
+
+[node name="DeckLabel" type="Label" parent="Deck" unique_id=719073326]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -80.0
+offset_top = -109.0
+offset_right = -5.0
+offset_bottom = -5.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Deck"
+
+[node name="DeckCount" type="Label" parent="Deck" unique_id=348145670]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -35.0
+offset_top = -32.0
+offset_right = -10.0
+offset_bottom = -9.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "10"
+
+[node name="Hand" type="Control" parent="." unique_id=1687616518]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="HandContainer" type="Control" parent="Hand" unique_id=1559434554]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -205.0
+offset_top = -151.0
+offset_right = 205.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="CardPreview" type="Control" parent="." unique_id=565851672]
+custom_minimum_size = Vector2(180, 240)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -93.0
+offset_top = -112.0
+offset_right = 87.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="pressed" from="BackButton" to="." method="_on_button_pressed"]

@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://bi33t1bh1c1gv"]
+
+[ext_resource type="Texture2D" uid="uid://dx0vv3v8ltuwo" path="res://CARTE.JPG" id="1_2kwvy"]
+[ext_resource type="Script" uid="uid://6m8nll6tmlvp" path="res://carte.gd" id="1_iytsy"]
+[ext_resource type="Texture2D" uid="uid://dhvnt0axrimhi" path="res://bleu.png" id="2_iytsy"]
+
+[node name="Carte" type="Control" unique_id=1247881702]
+custom_minimum_size = Vector2(180, 270)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 127.0
+offset_bottom = 155.0
+script = ExtResource("1_iytsy")
+
+[node name="Background" type="TextureRect" parent="." unique_id=109638241]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_2kwvy")
+expand_mode = 4
+
+[node name="Artwork" type="TextureRect" parent="." unique_id=568614935]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 24.0
+offset_right = 159.0
+offset_bottom = 146.0
+
+[node name="Rarity" type="TextureRect" parent="." unique_id=588924712]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -85.0
+offset_top = -2.0
+offset_right = 85.0
+offset_bottom = 24.0
+grow_horizontal = 2
+texture = ExtResource("2_iytsy")
+expand_mode = 2
+
+[node name="Name" type="Label" parent="." unique_id=805338101]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 1.0
+offset_right = 160.0
+offset_bottom = 24.0
+
+[node name="CostPA" type="Label" parent="." unique_id=916376366]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 1
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 24.0
+offset_bottom = 24.0
+
+[node name="CostPB" type="Label" parent="." unique_id=1623143921]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -25.0
+offset_bottom = 23.0
+grow_horizontal = 0
+
+[node name="Description" type="Label" parent="." unique_id=1948776803]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 160.0
+offset_right = 159.0
+offset_bottom = 243.0
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

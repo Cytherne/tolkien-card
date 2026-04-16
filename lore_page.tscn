@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://ci3xpo0kqxi8i"]
+
+[ext_resource type="Script" uid="uid://grx2lldgbd6c" path="res://lore_page.gd" id="1_3lm7b"]
+[ext_resource type="Texture2D" uid="uid://dtu25o1rnhniy" path="res://VeniceAI_Hs9Zi6o.png" id="2_lm6ef"]
+
+[node name="lore_page" type="Control" unique_id=792903149]
+layout_mode = 3
+anchor_right = 1.001
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -1.0
+offset_right = -0.15209961
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3lm7b")
+
+[node name="Label" type="Label" parent="." unique_id=382855886]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 113.0
+offset_right = 548.0
+offset_bottom = 259.0
+text = "CACA PROUT"
+
+[node name="Button" type="Button" parent="." unique_id=1623939908]
+layout_mode = 1
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 97.0
+offset_bottom = 98.0
+icon = ExtResource("2_lm6ef")
+expand_icon = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

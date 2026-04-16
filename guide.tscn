@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://bvvi7mfjx0xlo"]
+
+[ext_resource type="Script" uid="uid://plnb2ldaaexr" path="res://guide.gd" id="1_feuw2"]
+[ext_resource type="Texture2D" uid="uid://dl1hu88rxljh3" path="res://VeniceAI_fSCERNh.png" id="2_gajip"]
+[ext_resource type="Texture2D" uid="uid://dtu25o1rnhniy" path="res://VeniceAI_Hs9Zi6o.png" id="3_83y8a"]
+[ext_resource type="Script" uid="uid://dl88j2y0rr2dd" path="res://content_label.gd" id="4_gajip"]
+
+[node name="Guide" type="Control" unique_id=699372461]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_feuw2")
+
+[node name="BackImage" type="TextureRect" parent="." unique_id=1537322818]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 1154.0
+offset_bottom = 647.0
+texture = ExtResource("2_gajip")
+expand_mode = 1
+
+[node name="BackButton" type="Button" parent="." unique_id=2069847109]
+layout_mode = 0
+offset_left = 1057.0
+offset_top = 553.0
+offset_right = 1145.0
+offset_bottom = 640.0
+icon = ExtResource("3_83y8a")
+expand_icon = true
+
+[node name="BasesScrollContainer" type="ScrollContainer" parent="." unique_id=1693292654]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 121.0
+offset_right = 900.0
+offset_bottom = 553.0
+
+[node name="BasesVBoxContainer" type="VBoxContainer" parent="BasesScrollContainer" unique_id=1334455090]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BasesScrollContainer/BasesVBoxContainer" unique_id=504964675]
+layout_mode = 2
+
+[node name="BasesButton" type="Button" parent="BasesScrollContainer/BasesVBoxContainer/HBoxContainer" unique_id=1580608889]
+layout_mode = 2
+text = "Bases du jeu"
+
+[node name="PersoButton" type="Button" parent="BasesScrollContainer/BasesVBoxContainer/HBoxContainer" unique_id=171690611]
+layout_mode = 2
+text = "Personnages"
+
+[node name="RencontresButton" type="Button" parent="BasesScrollContainer/BasesVBoxContainer/HBoxContainer" unique_id=1839860442]
+layout_mode = 2
+text = "Rencontres"
+
+[node name="CombatButton" type="Button" parent="BasesScrollContainer/BasesVBoxContainer/HBoxContainer" unique_id=357694511]
+layout_mode = 2
+text = "Combat"
+
+[node name="CarteButton" type="Button" parent="BasesScrollContainer/BasesVBoxContainer/HBoxContainer" unique_id=1481125381]
+layout_mode = 2
+text = "Progression"
+
+[node name="MarginContainer" type="MarginContainer" parent="BasesScrollContainer/BasesVBoxContainer" unique_id=1895096697]
+custom_minimum_size = Vector2(600, 380)
+layout_mode = 2
+
+[node name="ContentLabel" type="Label" parent="BasesScrollContainer/BasesVBoxContainer/MarginContainer" unique_id=297783543]
+layout_mode = 2
+autowrap_mode = 3
+script = ExtResource("4_gajip")
+
+[node name="Button" type="Button" parent="." unique_id=1788100170]
+layout_mode = 0
+offset_left = 1053.0
+offset_top = 259.0
+offset_right = 1137.0
+offset_bottom = 388.0
+text = "TUTORIEL"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="BasesScrollContainer/BasesVBoxContainer/HBoxContainer/BasesButton" to="." method="_on_bases_button_pressed"]
+[connection signal="pressed" from="BasesScrollContainer/BasesVBoxContainer/HBoxContainer/PersoButton" to="." method="_on_perso_button_pressed"]
+[connection signal="pressed" from="BasesScrollContainer/BasesVBoxContainer/HBoxContainer/RencontresButton" to="." method="_on_rencontres_button_pressed"]
+[connection signal="pressed" from="BasesScrollContainer/BasesVBoxContainer/HBoxContainer/CombatButton" to="." method="_on_combat_button_pressed"]
+[connection signal="pressed" from="BasesScrollContainer/BasesVBoxContainer/HBoxContainer/CarteButton" to="." method="_on_carte_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

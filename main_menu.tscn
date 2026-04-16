@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://cvjnrxfid18i2"]
+
+[ext_resource type="Script" uid="uid://qsqa8oomw5ch" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://bad0rq2jx2qoo" path="res://cytherne3148_A_black_haired_elf_is_facing_a_devilish_monster_ma_5c5ff2b9-e36f-44b0-a38e-aea5a53b7802.png" id="1_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://dh2sq68tt0dql" path="res://titre 1.png" id="2_fu7sn"]
+
+[node name="MainPage" type="Control" unique_id=1219895604]
+layout_mode = 3
+anchor_right = 1.148
+anchor_bottom = 1.126
+offset_right = -170.49597
+offset_bottom = -88.64801
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=466304137]
+layout_mode = 1
+offset_left = 1.0
+offset_right = 1153.0
+offset_bottom = 648.0
+texture = ExtResource("1_7vrkn")
+expand_mode = 3
+stretch_mode = 6
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=388356535]
+layout_mode = 1
+offset_left = -3.0
+offset_top = 55.0
+offset_right = 427.0
+offset_bottom = 341.0
+texture = ExtResource("2_fu7sn")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="." unique_id=447191893]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -86.0
+offset_top = -35.5
+offset_right = 86.0
+offset_bottom = 35.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Nouvelle Partie"
+
+[node name="Button2" type="Button" parent="." unique_id=940960850]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -69.5
+offset_top = 59.5
+offset_right = 69.5
+offset_bottom = 124.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Continuer"
+
+[node name="Button3" type="Button" parent="." unique_id=2023239490]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1009.0
+offset_top = 527.0
+offset_right = -37.0
+offset_bottom = -83.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Guide du jeu
+"
+
+[node name="Button4" type="Button" parent="." unique_id=809328833]
+layout_mode = 0
+offset_left = 1041.0
+offset_top = 567.0
+offset_right = 1084.0
+offset_bottom = 598.0
+text = "Lore"
+
+[node name="Button5" type="Button" parent="." unique_id=1390388395]
+layout_mode = 0
+offset_left = 1018.0
+offset_top = 605.0
+offset_right = 1113.0
+offset_bottom = 636.0
+text = "Bug Report"
+
+[node name="Button6" type="Button" parent="." unique_id=1589390075]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -44.0
+offset_top = -42.0
+offset_right = 44.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Réglages"
+
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
